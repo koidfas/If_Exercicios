@@ -10,6 +10,4 @@ main(){
     printf("O seu salario foi reajustado para %f", reajuste);
 
 
-
-
 }
