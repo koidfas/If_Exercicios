@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 int main(){
-    int r=0; 
-do
-{
-    int i=0, num=0;
-    if (num > 0)
+    float num, soma=0, r=0,i=0;
+
+    do
     {
         printf("Digite um numero: ");
-        scanf("%d", &num);        
-        i++;
-        num = num + num;
-    }else
-    {
-        r++;
-    }
-} while (r == 0);
-
+        scanf("%f", &num);
+        if (num >= 0)
+        {
+            soma = soma + num;
+            i++;
+        }else 
+        {
+            r++;
+        }
+             
+    } while (r < 1); // executa só quando o args for negativo 
+    
+    printf("Média dos valores digitados: %.2f\n", (soma/i));
     return 0;
 }
